@@ -117,3 +117,4 @@ if __name__=="__main__":
         from functions import getdic
         getdic("stock_name.txt")
         getdic("indus_name.txt")
+        print("Complete. See ./sub_dics")
