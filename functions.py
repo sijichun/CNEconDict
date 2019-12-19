@@ -27,7 +27,7 @@ def getdic(filename):
     PWD=os.path.dirname(os.path.realpath(__file__))
     try:
         html=requests.get(url).text
-        with open(PWD+'/sub_dics'+filename,'w') as f:
+        with open(PWD+'/sub_dics/'+filename,'w') as f:
             f.write(html)
     except Exception as e:
         print("错误："+str(e))
