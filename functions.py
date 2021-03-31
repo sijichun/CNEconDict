@@ -63,4 +63,4 @@ def remove_duplicates(filename, csv=False):
             csv_file.writerows(rows)
         else:
             for w in content:
-                f.write(w.strip()+'\n')
+                f.write(w.strip() + '\n')

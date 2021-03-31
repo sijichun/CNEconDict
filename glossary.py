@@ -23,6 +23,7 @@ Csv_File = SUB_PATH + "/glossary.csv"
 if os.path.exists(SUB_PATH) is not True:
     os.mkdir(SUB_PATH)
 
+
 def get_glossary_sub_page(retry=3):
     """
     从Queue中挨个取出元素并爬取
@@ -134,7 +135,7 @@ if __name__ == "__main__":
         else:
             print("无效的参数：" + arg)
             sys.exit(1)
-    
+
     if Need_Craw:
         ## 从网络爬取
         get_glossary()
