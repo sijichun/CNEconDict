@@ -14,6 +14,8 @@
 
 其中各个文件功能如下：
 
+* glossary.py  从 *MBA智库百科* 获取专业词汇名称，并记录在：
+    * sub_dics/glossary.txt：专业词汇名称
 * stock_name.py 从 *新浪财经* 获取各只股票的名称、简称，并记录在:
     * sub_dics/stock_name.txt：搜集到的股票名称、股票对应公司名称、公司简称、股票名称历史
     * sub_dics/indus_name.txt：用于分类股票的行业名称
