@@ -55,6 +55,8 @@ def get_glossary_sub_page(retry=3):
                             glossary.append(iterm)
                             tasks.put(iterm)
                             Iterm_sets.add(l.text)
+                            with open(Dic_File, 'a') as f:
+                                f.write(l.text + '\n')
                             print(iterm)
                 ## 获取所有词语列表
                 div = bs.find_all(name="div", attrs={"class": "page_ul"})[0]
